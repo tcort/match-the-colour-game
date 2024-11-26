@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Match the Colour Game</title>
+
+        <link rel="stylesheet" href="css/tcort.css" />
+    </head>
+    <body>
+
+        <header>
+            <h1>Match the Colour Game</h1>
+        </header>
+
+        <main>
+            <section>
+                <div>
+                    <h2>Match this Colour</h2>
+                    <div>
+                        <canvas id="target-colour"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h2>Your Colour</h2>
+                    <div>
+                        <canvas id="user-colour"></canvas>
+                    </div>
+                    <div>
+                        Red: <input type="range" min="0" max="15" id="red" data-value-target="red-value"> <span id="red-value"></span>
+                    </div>
+                    <div>
+                        Green: <input type="range" min="0" max="15" id="green" data-value-target="green-value"> <span id="green-value"></span>
+                    </div>
+                    <div>
+                        Blue: <input type="range" min="0" max="15" id="blue" data-value-target="blue-value"> <span id="blue-value"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Copyright &copy; 2024 Thomas Cort
+            </p>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tcort.js"></script>
+        <script src="js/match-the-colour-game.js"></script>
+
+    </body>
+</html>
